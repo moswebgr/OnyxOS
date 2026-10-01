@@ -4,7 +4,7 @@
   <remote name="github" fetch="https://github.com/" />
   <default remote="github" revision="14.0" sync-j="4" />
 
-  <!-- Android 14 / crDroid base -->
+  <!-- crDroid 10 / Android 14 base -->
   <project name="crdroidandroid/android" path="." revision="14.0" remote="github" />
 
   <!-- Redmi Note 8 Pro (begonia) -->
@@ -13,5 +13,6 @@
   <project name="crdroidandroid/android_vendor_redmi_begonia" path="vendor/redmi/begonia" revision="14.0" remote="github" />
   <project name="crdroidandroid/android_vendor_redmi_begonia-ims" path="vendor/redmi/begonia-ims" revision="14.0" remote="github" />
   <project name="crdroidandroid/android_device_mediatek_sepolicy" path="device/mediatek/sepolicy" revision="14.0" remote="github" />
+  <project name="crdroidandroid/android_hardware_mediatek" path="hardware/mediatek" revision="14.0" remote="github" />
   <project name="begonia-dev/android_packages_apps_RevampedFMRadio" path="packages/apps/RevampedFMRadio" revision="14.0" remote="github" />
 </manifest>
