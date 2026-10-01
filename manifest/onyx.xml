@@ -11,8 +11,8 @@
   <project name="crdroidandroid/android_device_redmi_begonia" path="device/redmi/begonia" revision="14.0" remote="github" />
   <project name="crdroidandroid/android_kernel_xiaomi_mt6785" path="kernel/xiaomi/mt6785" revision="14.0" remote="github" />
   <project name="crdroidandroid/android_vendor_redmi_begonia" path="vendor/redmi/begonia" revision="14.0" remote="github" />
-  <project name="crdroidandroid/android_vendor_redmi_begonia-ims" path="vendor/redmi/begonia-ims" revision="14.0" remote="github" />
-  <project name="crdroidandroid/android_device_mediatek_sepolicy" path="device/mediatek/sepolicy" revision="14.0" remote="github" />
+  <project name="begonia-dev/android_vendor_redmi_begonia-ims" path="vendor/redmi/begonia-ims" revision="14.0" remote="github" />
+  <project name="begonia-dev/android_device_mediatek_sepolicy" path="device/mediatek/sepolicy" revision="14.0" remote="github" />
   <project name="crdroidandroid/android_hardware_mediatek" path="hardware/mediatek" revision="14.0" remote="github" />
   <project name="begonia-dev/android_packages_apps_RevampedFMRadio" path="packages/apps/RevampedFMRadio" revision="14.0" remote="github" />
 </manifest>
