@@ -1,0 +1,9 @@
+<resources>
+  <color name="onyx_accent">#9B5CFF</color>
+  <color name="onyx_accent_light">#C28CFF</color>
+  <color name="onyx_background">#09070F</color>
+  <color name="onyx_surface">#12101A</color>
+  <color name="onyx_surface_variant">#1B1725</color>
+  <color name="onyx_text">#F7F2FF</color>
+  <color name="onyx_muted">#AAA1B7</color>
+</resources>
