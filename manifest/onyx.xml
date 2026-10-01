@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Placeholder until the Android/LineageOS base release and revisions are pinned. -->
+  <remote name="onyx-local" fetch=".." revision="main" />
+  <default remote="onyx-local" revision="main" sync-j="4" />
+</manifest>
