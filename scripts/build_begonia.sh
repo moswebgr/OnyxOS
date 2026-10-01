@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DEVICE="begonia"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ANDROID_ROOT="${ANDROID_ROOT:-$ROOT/.android}"
 
+"$ROOT/scripts/prepare_onyx.sh"
+cd "$ANDROID_ROOT"
 source build/envsetup.sh
-lunch lineage_${DEVICE}-userdebug
-m bacon -j"$(nproc)"
+lunch onyx_begonia-userdebug
+m otapackage -j"${JOBS:-$(nproc)}"
 
-echo
-echo "Build complete."
-echo "Artifacts: out/target/product/${DEVICE}/"
+echo "Build output: $ANDROID_ROOT/out/target/product/begonia/"
