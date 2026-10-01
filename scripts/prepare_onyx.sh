@@ -9,8 +9,7 @@ if ! command -v repo >/dev/null 2>&1; then
   exit 1
 fi
 
-mkdir -p "$ANDROID_ROOT/.repo/local_manifests"
-cp "$ROOT/manifest/onyx.xml" "$ANDROID_ROOT/.repo/local_manifests/onyx.xml"
+mkdir -p "$ANDROID_ROOT"
 
 if [ ! -d "$ANDROID_ROOT/.repo" ]; then
   cd "$ANDROID_ROOT"
@@ -18,6 +17,9 @@ if [ ! -d "$ANDROID_ROOT/.repo" ]; then
 else
   cd "$ANDROID_ROOT"
 fi
+
+mkdir -p "$ANDROID_ROOT/.repo/local_manifests"
+cp "$ROOT/manifest/onyx.xml" "$ANDROID_ROOT/.repo/local_manifests/onyx.xml"
 
 repo sync -c --force-sync --no-clone-bundle -j"${JOBS:-4}"
 
