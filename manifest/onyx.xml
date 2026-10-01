@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Placeholder until the Android/LineageOS base release and revisions are pinned. -->
-  <remote name="onyx-local" fetch=".." revision="main" />
-  <default remote="onyx-local" revision="main" sync-j="4" />
+  <remote name="aosp" fetch="https://android.googlesource.com/" />
+  <remote name="github" fetch="https://github.com/" />
+  <default remote="github" revision="14.0" sync-j="4" />
+
+  <!-- Android 14 / crDroid base -->
+  <project name="crdroidandroid/android" path="." revision="14.0" remote="github" />
+
+  <!-- Redmi Note 8 Pro (begonia) -->
+  <project name="crdroidandroid/android_device_redmi_begonia" path="device/redmi/begonia" revision="14.0" remote="github" />
+  <project name="crdroidandroid/android_kernel_xiaomi_mt6785" path="kernel/xiaomi/mt6785" revision="14.0" remote="github" />
+  <project name="crdroidandroid/android_vendor_redmi_begonia" path="vendor/redmi/begonia" revision="14.0" remote="github" />
+  <project name="crdroidandroid/android_vendor_redmi_begonia-ims" path="vendor/redmi/begonia-ims" revision="14.0" remote="github" />
+  <project name="crdroidandroid/android_device_mediatek_sepolicy" path="device/mediatek/sepolicy" revision="14.0" remote="github" />
+  <project name="begonia-dev/android_packages_apps_RevampedFMRadio" path="packages/apps/RevampedFMRadio" revision="14.0" remote="github" />
 </manifest>
