@@ -21,19 +21,18 @@ OnyxOS is an Android-based privacy-focused operating system project targeting ol
 
 ## Repository status
 
-This repository contains the OnyxOS project layer and reproducible setup documentation. It does not vendor the full Android/AOSP source tree.
+This repository contains the OnyxOS project layer, an Android 14 / begonia manifest, and a reproducible build path. The full Android source tree is synchronized separately; proprietary device blobs are not redistributed here.
 
 The Android source should be synced separately using the manifest under `manifest/`.
 
 ## Development stages
 
-1. Sync the Android base.
-2. Build an emulator target.
+1. Sync the Android 14 base and begonia hardware trees.
+2. Build the onyx_begonia-userdebug target.
 3. Implement and test the network fail-closed/Tor path.
 4. Implement ephemeral session behavior.
-5. Integrate begonia device configuration.
-6. Build and test a real begonia image.
-7. Validate Wi-Fi, mobile data, Bluetooth, camera, audio, sensors and fingerprint on hardware.
+5. Build a real begonia image.
+6. Validate Wi-Fi, mobile data, Bluetooth, camera, audio, sensors and fingerprint on hardware.
 
 Hardware functionality is unverified until tested on a real device.
 
