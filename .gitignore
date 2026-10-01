@@ -1,0 +1,21 @@
+# Android build output
+out/
+out_*/
+build/
+*.img
+*.zip
+*.ota
+*.apk
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Credentials
+*.pem
+*.key
+.env
+.env.*
