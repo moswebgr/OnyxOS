@@ -1,0 +1,7 @@
+<resources>
+  <string name="onyx_brand_name">ONYXOS</string>
+  <string name="onyx_privacy_tagline">LIVE • PRIVATE • TOR ONLY</string>
+  <string name="onyx_tor_starting">Tor is starting...</string>
+  <string name="onyx_tor_active">Tor Active</string>
+  <string name="onyx_tor_only">All connections via Tor</string>
+</resources>
